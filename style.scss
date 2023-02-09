@@ -1,0 +1,79 @@
+body {
+    background-color: cornsilk;
+    max-width: 1024px;
+    margin-left: 50%;
+
+    transform: translate(-50%, 0);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Tahoma, sans-serif; // .main__title
+
+    &__title {
+        color: peru;
+    }
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: antiquewhite;
+    padding: 1.8em;
+    border-bottom: 5px dotted peru;
+    // .card__body
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .card__name
+
+    &__name {
+        color: rgb(104, 61, 18);
+        font-size: 1.2em;
+        font-weight: 500;
+        font-style: italic;
+    }
+
+    // .card__career
+
+    &__career {
+        margin-top: 0.5em;
+        font-size: smaller;
+        color: rgb(57, 38, 19);
+    }
+
+    // .card__films
+
+    &__films {
+        color: rgb(102, 67, 31);
+        height: fit-content;
+        padding: 0.2em;
+
+        &:hover {
+            color: antiquewhite;
+            background-color: rgb(102, 67, 31);
+            border-radius: 5px;
+        }
+    }
+}
+.section {
+    // .section__title
+
+    &__title {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        color: rgb(102, 67, 31);
+    }
+}
+.topRatedFilms {
+    background-color: antiquewhite;
+    padding: 2em;
+    margin-bottom: 5em;
+    color: rgb(104, 61, 18);
+    line-height: 1.5em;
+}
